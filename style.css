@@ -24,8 +24,27 @@
   font-weight: 600;
 }
 
-.none {
-  display: none;
+.btn-color:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+  font-size: 17px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+
+/* hover effect 2 */
+
+.hover-2:hover {
+  background-color: #001931;
 }
 
 /* nav-bar style */
@@ -52,14 +71,11 @@ nav {
       }
     }
   }
-
-  > .btn {
-  }
 }
 
 /* banner section style starts here */
 .banner {
-  background: url(./assets/hero-bg.png);
+  background: linear-gradient(#00193150, #05a1ac36), url("./assets/hero-bg.png");
   background-size: cover;
   min-height: 650px;
   display: flex;
@@ -126,12 +142,17 @@ nav {
         /* flex-direction: column; */
       }
       .btn-2 {
-        border: 2px solid #fff;
+        border: 3px solid #fff;
         background-color: transparent;
 
         img {
           /* border: 2px solid red; */
           width: 20px;
+        }
+
+        &:hover {
+          background-color: #30b868;
+          border: 2px solid #30b868;
         }
       }
     }
@@ -151,10 +172,11 @@ nav {
     .heading-part {
       text-align: center;
       margin-bottom: 40px;
+
       h2 {
         font-size: 48px;
         color: #001931;
-        margin: 40px 0 16px;
+        margin: 60px 0 16px;
       }
       p {
         font-size: 16px;
@@ -210,7 +232,7 @@ nav {
     margin: 120px auto;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 60px;
     font-size: 16px;
 
     .explaination {
@@ -271,12 +293,17 @@ nav {
         font-size: 16px;
         color: #627382;
         line-height: 24px;
+
+        img {
+          display: none;
+        }
       }
     }
     .btn {
       display: flex;
       justify-content: center;
       align-items: center;
+      gap: 10px;
       margin: 0 auto 16px; /*WHY THIS NEEDED*/
     }
     .section-foot {
@@ -337,3 +364,5 @@ footer {
     }
   }
 }
+
+/* special hover effect */
